@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class=container id=container>
+        <div class=calculator>
+            <div class=top id=night>
+                <p id=toggle><i class='bx bx-moon'></i></p>
+                <p class=header>Calculator</p>
+            </div>
+            <div class=result-screen>
+
+                <h2 id=output>0</h2>
+                <p id=input></p>
+            </div>
+            <section class=keys id=num>
+                <div class=operators name=key onclick="calculate('C')"><span>C</span></div>
+                <div class=operators name=key onclick="calculate('AC')"><span>AC</span></div>
+                <div class=operators name=key onclick="calculate('%')"><span>%</span></div>
+                <div class=operators name=key onclick="calculate('/')"><span>/</span></div>
+                <div class=numbers name=key onclick="calculate('7')"><span>7</span></div>
+                <div class=numbers name=key onclick="calculate('8')"><span>8</span></div>
+                <div class=numbers name=key onclick="calculate('9')"><span>9</span></div>
+                <div class=operators name=key onclick="calculate('*')"><span>x</span></div>
+                <div class=numbers name=key onclick="calculate('4')"><span>4</span></div>
+                <div class=numbers name=key onclick="calculate('5')"><span>5</span></div>
+                <div class=numbers name=key onclick="calculate('6')"><span>6</span></div>
+                <div class=operators name=key onclick="calculate('-')"><span>-</span></div>
+                <div class=numbers name=key onclick="calculate('1')"><span>1</span></div>
+                <div class=numbers name=key onclick="calculate('2')"><span>2</span></div>
+                <div class=numbers name=key onclick="calculate('3')"><span>3</span></div>
+                <div class=operators name=key onclick="calculate('+')"><span>+</span></div>
+                <div class=numbers name=key onclick="calculate('0')"><span>0</span></div>
+                <div class=numbers name=key onclick="calculate('00')"><span>00</span></div>
+                <div class=numbers name=key onclick="calculate('.')"><span>.</span></div>
+                <div class=operators name=key onclick="calculate('=')"><span>=</span></div>
+            </section>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.4/math.js"></script>
+</body>
+
+</html>

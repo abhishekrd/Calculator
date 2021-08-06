@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.container{
+    background-color: rgb(226, 226, 226);
+    min-height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition:0.5s all;
+}
+i{
+    padding-left: 2rem;
+    padding-top: 0.5rem;
+}
+
+.top{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;    
+    background-color: orangered;
+  
+}
+.result-screen{
+    background-color:rgb(34, 34, 34);
+    color:whitesmoke;
+
+}
+.calculator{
+    display: grid;
+    grid-template-rows: 10% 20% 70%;
+    width:22rem;
+    height:32rem;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:2rem;
+   
+    
+}
+section.keys{
+    display:grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-column-gap:0.2rem;
+    grid-row-gap:0.2rem;
+    padding:0.2rem 0.2rem 0.2rem 0.2rem; 
+    background-color: white;
+   
+}
+.keys div{
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:8rem;
+transition:0.3s all;
+}
+.keys div.operators{
+    background-color:orangered;
+    color:white;
+}
+.keys div.numbers{
+    background-color:rgb(34, 34, 34);
+    color:white;
+}
+
+.keys div.operators:hover{
+    background-color:rgb(161, 47, 5);
+    color:white;
+    cursor: pointer;
+}
+.keys div.numbers:hover{
+    background-color:rgb(216, 216, 216);
+    color:black;
+    cursor:pointer;
+}
+
+
+
+#output
+{
+ text-align: right;
+ padding:0 0.2rem 0.3rem 0.5rem;
+ 
+   
+}
+#input{
+    text-align: right;
+    padding:0 0.2rem 0.3rem 0.5rem;
+    
+}
+.header{
+    font-family:"open sans";
+    font-size: 25px;
+    font-weight: bolder;
+    color: whitesmoke;
+    padding-right: 5px;
+}
+section{
+    transition: 0.3s all;
+}
+
+
+section.active{
+    background : black;
+    
+}
+#toggle.active{
+    color: whitesmoke;
+}
+#container.active{
+    background: rgb(49, 48, 48);
+}
