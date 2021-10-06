@@ -64,17 +64,19 @@ transition:0.3s all;
     color:white;
 }
 
-.keys div.operators:hover{
+.keys div.operators:active{
     background-color:rgb(161, 47, 5);
     color:white;
+    transform:scale(0.95)
     cursor: pointer;
 }
-.keys div.numbers:hover{
+
+.keys div.numbers:active{
     background-color:rgb(216, 216, 216);
     color:black;
+    transform:scale(0.95)
     cursor:pointer;
 }
-
 
 
 #output
